@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Web Form Page </title>
+        <link rel="stylesheet" href="../HTML_CSS/Form_page.css">
+        <link rel="icon" href="../Images/Background_img.jpg">
+       
+    </head>
+
+   <body>
+    <div class="form-container">
+        <form action="/submit-form" method="post" >
+
+            <h3>Create an account</h3>
+            <p>Add a team member</p>
+
+            <label for="first_name">First name:</label>
+            <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
+
+            <label for="last_name">Last name:</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Ex: someone@gmail.com" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+
+            <label for="jobpost">Job Position:</label>
+            <input type="text" id="jobpost" name="jobpost" placeholder="Enter your job position">
+
+            <label for="upload_file">Upload a picture:</label>
+            <input type="file" id="upload_file" name="profile_picture" accept="image/*">
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I accept the terms and conditions</label>
+            </div>
+
+            <button type="submit">Add a team member</button>
+            <button type="button">Back to the list of team members</button>
+            
+        </form>
+    </div>
+</body>
+</html>
